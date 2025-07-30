@@ -128,7 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Downloaded videos
+# Downloaded videos and archives
 *.mp4
 *.webm
 *.mkv
@@ -137,3 +137,7 @@ dmypy.json
 *.flv
 *.wmv
 *.m4v
+*.zip
+*.rar
+*.7z
+*.tar.gz
