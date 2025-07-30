@@ -9,6 +9,42 @@
                 "download_youtube.py",
                 "${input:youtubeUrl}"
             ],
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Get Video Info",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/python",
+            "args": [
+                "download_youtube.py",
+                "--info",
+                "${input:youtubeUrl}"
+            ],
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Download Multiple Videos",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/python",
+            "args": [
+                "download_youtube.py",
+                "${input:multipleUrls}"
+            ],
+            "group": "build",
             "problemMatcher": [],
             "presentation": {
                 "echo": true,
@@ -23,6 +59,11 @@
             "id": "youtubeUrl",
             "type": "promptString",
             "description": "请输入YouTube链接"
+        },
+        {
+            "id": "multipleUrls",
+            "type": "promptString",
+            "description": "请输入多个YouTube链接（用空格分隔）"
         }
     ]
 }
