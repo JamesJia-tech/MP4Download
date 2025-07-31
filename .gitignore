@@ -129,9 +129,7 @@ dmypy.json
 .pyre/
 
 # Downloaded videos and archives
-# Note: Large files below are managed by Git LFS
-# *.mp4  # Managed by Git LFS
-# *.zip  # Managed by Git LFS
+*.mp4
 *.webm
 *.mkv
 *.avi
@@ -139,6 +137,7 @@ dmypy.json
 *.flv
 *.wmv
 *.m4v
+*.zip
 *.rar
 *.7z
 *.tar.gz
